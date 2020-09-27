@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center_vertical"
+        android:text="Tienda Online"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/txtBuscarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:hint="Nombre del Producto"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/ltsProductos"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_below="@+id/txtBuscarProductos"
+        android:layout_marginTop="104dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/ibmostrar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/txtBuscarProductos"
+        android:layout_marginStart="-420dp"
+        android:layout_marginLeft="-420dp"
+        android:layout_marginTop="78dp"
+        android:layout_toEndOf="@+id/txtBuscarProductos"
+        android:layout_toRightOf="@+id/txtBuscarProductos"
+        android:background="@android:color/darker_gray"
+        android:src="@android:drawable/ic_menu_save" />
+
+
+
+</RelativeLayout>

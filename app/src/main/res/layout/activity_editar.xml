@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editar">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_below="@+id/txtIdProducto"
+        android:layout_marginTop="-744dp"
+        android:layout_marginBottom="673dp"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center_vertical"
+        android:text="Tienda Online"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/txtDescripcionProducto1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtNombreProducto1"
+        android:layout_marginTop="10dp"
+        android:hint="Descripcion"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnBorrarProductos"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/txtPrecioProducto1"
+        android:layout_marginStart="-411dp"
+        android:layout_marginLeft="-411dp"
+        android:layout_marginTop="141dp"
+        android:layout_toEndOf="@+id/btnModificarProductos"
+        android:layout_toRightOf="@+id/btnModificarProductos"
+        android:background="@android:color/holo_red_dark"
+        android:text="BORRAR REGISTRO"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnModificarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtPrecioProducto1"
+        android:layout_marginTop="51dp"
+        android:background="@android:color/darker_gray"
+        android:text="EDITAR REGISTRO"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtPrecioProducto1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtCantidadProducto1"
+        android:layout_marginTop="11dp"
+        android:hint="Precio Unitario"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtCantidadProducto1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtDistribuidorProducto1"
+        android:layout_marginTop="10dp"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtNombreProducto1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:hint="Nombre del Producto"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtDistribuidorProducto1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtDescripcionProducto1"
+        android:layout_marginTop="10dp"
+        android:hint="Distribuidor"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtIdProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnBorrarProductos"
+        android:hint="ID"
+        android:visibility="invisible"/>
+</RelativeLayout>
